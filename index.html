@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="" href="">
+  <script src="index.js" defer></script>
+
+  <title>Guess the color</title>
+
+  <style>
+    
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #259976;
+    }
+
+    #cnt {
+      text-align: center;
+      height: auto;
+      border: 2px black solid;
+    }
+
+    .color-box {
+      display: inline-block;
+      width: 80px;
+      height: 80px;
+      margin: 20px;
+      cursor: pointer;
+    }
+    h1{
+        text-shadow: 7px 7px 0px #1d314d62;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div id="cnt">
+  <h1> Color Guessing Game</h1>
+  <p>Score: <span id="displayCounter"></span></p>
+  <img src="tet.jpg" alt="tetris picture">
+  <p><b><em>Guess the color:</b></em></p>
+  <div id="color-display" class="color-box"></div>
+  <div id="message" style="color: rgb(6, 63, 6); border: 1px dashed black; text-align: center;"></div>
+  <div id="options-container"></div>
+</div>
+
+</body>
+
+</html>
